@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(bodyParser.json());
 
-app.use('/api', require('../router/productos'))
+app.use('/api/productos', require('./router/productos'))
 
 app.use('/', router)
 
